@@ -22,6 +22,8 @@ fetch(endpoint)
   .then(blob => blob.json())
   .then(data => cities.push(...data));
 
+console.log(typeof(cities));
+
 function findMatches(wordToMatch, cities) {
   return cities.filter(place => {
     // here we need to figure out if the city or state matches what was searched
